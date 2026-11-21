@@ -1,6 +1,6 @@
-// Box.asm  -  K = 55
-// Box: starts at row 55, 20 rows tall, 64 pixels (4 words) wide, left edge.
-// Row 55 starts at 16384 + 32*55 = 18144.
+// Box.asm  -  K = 52
+// Box: starts at row 52, 20 rows tall, 64 pixels (4 words) wide, left edge.
+// Row 52 starts at 16384 + 32*52 = 18048.
 // Key pressed -> black box; key released -> box cleared.
 
 (MAIN)
@@ -16,7 +16,7 @@
     @color          // key: color = -1 (black)
     M=-1
 (DRAW)
-    @18144          // address of first word of row 55
+    @18048          // address of first word of row 52
     D=A
     @addr
     M=D
